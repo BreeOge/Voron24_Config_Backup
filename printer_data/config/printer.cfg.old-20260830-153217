@@ -1,6 +1,3 @@
-# Happy Hare MMU includes (should be near top of file)
-[include mmu/base/*.cfg]
-[include mmu/macros/*.cfg]
 #####################################################################
 # Printer Variables
 #####################################################################
@@ -56,6 +53,14 @@ shaper_freq_y = 51.6   # recommended frequency value (e.g., 56.5)
 # MCU Configs
 #####################################################################
 [include ./config/mcu.cfg]
+
+#####################################################################
+# MMU Enraged Rabbit Carrot Feeder
+#####################################################################
+#[include mmu/base/*.cfg]
+#[include mmu/optional/client_macros.cfg]
+#[include mmu/addons/blobifier.cfg]
+#[include mmu/addons/mmu_erec_cutter.cfg]
 
 #####################################################################
 # X/Y Stepper Settings 
@@ -149,9 +154,6 @@ shaper_freq_y = 51.6   # recommended frequency value (e.g., 56.5)
 #####################################################################
 [include ./config/nevermore.cfg]
 
-
-# Happy Hare Client macros (should be after last include or other PAUSE/CANCEL macros)
-[include mmu/optional/client_macros.cfg]
 
 #*# <---------------------- SAVE_CONFIG ---------------------->
 #*# DO NOT EDIT THIS BLOCK OR BELOW. The contents are auto-generated.
